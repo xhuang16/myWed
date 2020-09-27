@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Engineering for Microbiology</title>
+<title>Engineering for Microbiology</title>
 
-  <style>
+<style>
 
   .tab {
     overflow: hidden;
@@ -20,6 +20,7 @@
     outline: none;
     cursor: pointer;
     padding-top: 15px;
+    padding-bottom: 15px;
     transition: 0.3s;
     font-size: 17px;
   }
@@ -74,12 +75,12 @@
   height: auto;
 }
 
-.containerLeft {
+/* .containerLeft {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
   width: 50%;
-}
+} */
 
 /* The circles on the timeline */
 .container::after {
@@ -95,7 +96,7 @@
   z-index: 1;
 }
 
-.containerLeft::after {
+/* .containerLeft::after {
   content: '';
   position: absolute;
   width: 25px;
@@ -106,7 +107,7 @@
   top: 30px;
   border-radius: 50%;
   z-index: 1;
-}
+} */
 
 /* Place the container to the left */
 .left {
@@ -183,11 +184,11 @@
     margin-top: 0px;
     margin-bottom: 0px;
     color: #004080;
-    font-family: verdana;
+    /* font-family: verdana; */
   }
   .containterText{
     color: #525252;
-    font-family:verdana;
+    /* font-family:verdana; */
     font-size: 17px;
     line-height: 150%;
     padding-left: 10px;
@@ -196,22 +197,32 @@
     margin-right: auto;
  }
 
-  h2 {color: #004080;
+ .researchTitle{
+   font-size: 25px;
+   text-align: left;
+   margin-top: 0;
+   padding-left: 15%;
+ }
+
+ .researchContent{
+   color: #393e4a;
+   margin-top: 5px;
+   font-size: 18px;
+   padding-left: 15%;
+   padding-right: 30%;
+   line-height: 25px;
+ }
+
+  h2 {
+    color: #004080;
     font-family: verdana
   }
 
-  /* img{width:35%;
-    height:auto;
-    margin-right:5%;
-    float: left;
-  } */
-
-  p{color: #393e4a;
-    font-family: monaco;
+  p{
+    color: #393e4a;
     margin-top: 5px;
-    font-size: 16px;
-    line-height: 40px;
-    margin-bottom: 10em;
+    font-size: 18px;
+    line-height: 35px;
     padding-left: 10%;
   }
 
@@ -237,8 +248,7 @@
   }
 
 
-  </style>
-
+</style>
 </head>
 <body>
 
@@ -253,14 +263,16 @@
   </div>
 
   <div id="HOME" class="tabcontent" style="padding-left:15%;padding-right:15%">
-    <h2 style="text-align: center; color: #141E3C; font-size: 22px;">
-      What is engineering? What does it mean to engineer something for microbiology?
+    <h2 style="text-align: center; color: #141E3C; font-size: 30px;">
+      What is engineering?
     </h2>
-
+    <h2 style="text-align: center; color: #141E3C; font-size: 30px; margin-top: -1%;">
+      What does it mean to engineer something for microbiology?
+    </h2>
     <h4 style="margin-top: -1%;padding-bottom: 1%; text-align: center; color: #0077ff;">
       I don't know. Let's find out together
     </h4>
-    <div class = "row">
+    <div class = "row" style = "padding-left:5%;padding-right:5%">
       <div class = "column" style = "width: 30%">
         <img src = "Linkedin.PNG" alt = "profilePic" style="width:100%; padding-left:10%;margin-top: auto;margin-bottom: auto">
       </div>
@@ -274,67 +286,71 @@
   </div>
 
   <div id="RESEARCH" class="tabcontent" style="padding-left:15%;padding-right:15%">
-    <h2 style="text-align: center; color: #141E3C;">
+    <h2 style="text-align: center; color: #141E3C; font-size: 30px;">
       My current and past research
     </h2>
     <div class = "row">
-        <h2 style="font-size: 20px;text-align: left; margin-top: 0; padding-left: 10%;">We Got the Collected cells Out</h2>
-        <p>
-          Collection2
+        <h2 class= "researchTitle">We Got the Collected cells Out</h2>
+        <p class = "researchContent">
+          We have been trouble shooting the collection system for our prior device. Now we are able to collect enough cells to form large pellet after spinning. Next step, impedance or flow cytometry!
+        </p>
+        <img src = "collectedCells.jpg" alt = "profilePic" style="width:20%; padding-left: 15%;">
+    </div>
+    <div class = "row">
+        <h2 class= "researchTitle">Collection Channels in New DEP Device</h2>
+        <p class = "researchContent">
+          We designed and integrated the next iteration expansion collection channels to our previous orifice DEP design. The expansion section is designed to amplify separation distance between streamlines. Here we demonstrate collection of no DEP and DEP fractionated RBCs.
+        </p>
+        <img src = "DEP.gif" alt = "profilePic" style="width:50%; padding-left: 15%;">
+    </div>
+    <div class = "row">
+        <h2 class= "researchTitle">COMSOL Simulation</h2>
+        <p class = "researchContent">
+          Since the lab locked down due to COVID, I have spent my time learning COMSOL. The goal I have in mind it to use COMSOL to better design electrodes to maximize for the nDEP and the pDEP case.
         </p>
     </div>
     <div class = "row">
-        <h2 style="font-size: 20px;text-align: left; margin-top: 0; padding-left: 10%;">Collection Channels in New DEP Device</h2>
-        <p>
-          Collection
+        <h2 class= "researchTitle">First DEP in new device</h2>
+        <p class = "researchContent">
+          We designed and fabricated a dynamic DEP device. The video here shows the cells being deflected under nDEP. The expansion of the cells also displays the spatial extend of the electric field.
+        </p>
+        <img src = "inertial.gif" alt = "profilePic" style="width:50%; padding-left: 15%;">
+    </div>
+    <div class = "row">
+        <h2 class= "researchTitle">RBC Pearl Chaining</h2>
+        <p class = "researchContent">
+          After spending months of troubleshooting the fabrication of these microfluidic devices, I am finally able to move on to the experimental stage. Here we show field penetration across the microchannel by demonstrating pearl chaining of RBCs.
+        </p>
+        <img src = "PC.gif" alt = "profilePic" style="width:50%; padding-left: 15%;">
+    </div>
+    <div class = "row">
+        <h2 class= "researchTitle">Embossing Microfluidic Devices in COC</h2>
+        <p class = "researchContent">
+          I have been assigned to develop a process to fabricate high aspect ratio cell separating microfluidic device in COC through a hot embossing process. The project is done for CytoRecovery Inc.
         </p>
     </div>
     <div class = "row">
-        <h2 style="font-size: 20px;text-align: left; margin-top: 0; padding-left: 10%;">COMSOL Simulation</h2>
-        <p>
-          COVID has has the lab to shut down so now all I can do is work from home.
-        </p>
-    </div>
-    <div class = "row">
-        <h2 style="font-size: 20px;text-align: left; margin-top: 0; padding-left: 10%;">First DEP in new device</h2>
-        <p>
-          Orifice DEP
-        </p>
-    </div>
-    <div class = "row">
-        <h2 style="font-size: 20px;text-align: left; margin-top: 0; padding-left: 10%;">RBC Pearl Chaining</h2>
-        <p>
-          Orifice DEP
-        </p>
-    </div>
-    <div class = "row">
-        <h2 style="font-size: 20px;text-align: left; margin-top: 0; padding-left: 10%;">Embossing Microfluidic Devices in COC</h2>
-        <p>
-          COC
-        </p>
-    </div>
-    <div class = "row">
-        <h2 style="font-size: 20px;text-align: left; margin-top: 0; padding-left: 10%;">First Project in Grad School</h2>
-        <p>
+        <h2 class= "researchTitle">First Project in Grad School</h2>
+        <p class = "researchContent">
           Python Gui
         </p>
     </div>
     <div class = "row">
-        <h2 style="font-size: 20px;text-align: left; margin-top: 0; padding-left: 10%;">Silicon Germanium Heterostructure</h2>
-        <p>
+        <h2 class= "researchTitle">Silicon Germanium Heterostructure</h2>
+        <p class = "researchContent">
           Paper
         </p>
     </div>
     <div class = "row">
-        <h2 style="font-size: 20px;text-align: left; margin-top: 0; padding-left: 10%;">Bismuth Antimonide</h2>
-        <p>
+        <h2 class= "researchTitle">Bismuth Antimonide</h2>
+        <p class = "researchContent">
           Paper
         </p>
     </div>
 
   </div>
 
-  <div id="ABOUT ME" class="tabcontent" style="padding-left:25%;padding-right:25%">
+  <div id="ABOUT ME" class="tabcontent" style="padding-left:200px;padding-right:200px">
 
     <h2 style="text-align: center; color: #141E3C;">
       The Journey So Far
@@ -351,11 +367,11 @@
           <h2 class = "containterTitle"> AFRL</h2>
           <hr class = "containterDivider">
           <div class = "row">
-            <div class = "column" style = "width: 30%">
-              <img src = "WS2.jpg" alt = "profilePic" style="width:100%; padding-top:10%; padding-bottom:10%;">
+            <div class = "column" style = "width: 40%">
+              <img src = "WS2.jpg" alt = "profilePic" style="width:100%; padding-top:10%; padding-bottom: 5%;padding-left: 5%;">
             </div>
-            <div class = "column" style = "width: 70%;">
-              <p class = "containterText">
+            <div class = "column" style = "width: 60%;">
+              <p class = "containterText" style = "padding-left: 10%; padding-top:5%">
                 It all started with a summer research intership in a Physics lab at the Wright Patterson Air Force Base.
               </p>
             </div>
