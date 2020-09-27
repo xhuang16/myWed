@@ -16,8 +16,7 @@
   .tab button {
     background-color: inherit;
     float: left;
-    border: none;
-    outline: none;
+    border: 3px solid #2e4073;
     cursor: pointer;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -25,6 +24,7 @@
     font-size: 17px;
   }
   .tab button:hover {background-color: #A9A9A9;}
+
   body{
     background-color: #d8dde3;
   }
@@ -35,6 +35,9 @@
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  padding-left: 15%;
+  padding-right: 15%;
+
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -75,12 +78,6 @@
   height: auto;
 }
 
-/* .containerLeft {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-} */
 
 /* The circles on the timeline */
 .container::after {
@@ -95,19 +92,6 @@
   border-radius: 50%;
   z-index: 1;
 }
-
-/* .containerLeft::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color:  #91b1ff;
-  border: 4px solid #2e4073;
-  top: 30px;
-  border-radius: 50%;
-  z-index: 1;
-} */
 
 /* Place the container to the left */
 .left {
@@ -171,7 +155,7 @@
 
   h1 {color: #141E3C;
     text-align: center;
-    font-size:300%;
+    font-size:325%;
   }
 
   .dataText{
@@ -184,32 +168,39 @@
     margin-top: 0px;
     margin-bottom: 0px;
     color: #004080;
-    /* font-family: verdana; */
   }
   .containterText{
     color: #525252;
-    /* font-family:verdana; */
-    font-size: 17px;
-    line-height: 150%;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: auto;
+    font-size: 110%;
+    line-height: 125%;
+    margin-top: -2%;
+    margin-left: 0;
     margin-right: auto;
+    width: 95%;
+    padding-left: 0;
+    padding-top:5%;
+    padding-right: 2%;"
+ }
+ .containerImg{
+    width: 80%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    padding-left: 10%;
  }
 
  .researchTitle{
    font-size: 25px;
    text-align: left;
-   margin-top: 0;
+   margin-top: 50px;
    padding-left: 15%;
  }
 
  .researchContent{
    color: #393e4a;
-   margin-top: 5px;
+   margin-top: -5px;
    font-size: 18px;
-   padding-left: 15%;
-   padding-right: 30%;
+   padding-left: 20%;
+   padding-right: 18%;
    line-height: 25px;
  }
 
@@ -264,10 +255,7 @@
 
   <div id="HOME" class="tabcontent" style="padding-left:15%;padding-right:15%">
     <h2 style="text-align: center; color: #141E3C; font-size: 30px;">
-      What is engineering?
-    </h2>
-    <h2 style="text-align: center; color: #141E3C; font-size: 30px; margin-top: -1%;">
-      What does it mean to engineer something for microbiology?
+      What is engineering? <br>       What does it mean to engineer something for microbiology?
     </h2>
     <h4 style="margin-top: -1%;padding-bottom: 1%; text-align: center; color: #0077ff;">
       I don't know. Let's find out together
@@ -294,34 +282,35 @@
         <p class = "researchContent">
           We have been trouble shooting the collection system for our prior device. Now we are able to collect enough cells to form large pellet after spinning. Next step, impedance or flow cytometry!
         </p>
-        <img src = "collectedCells.jpg" alt = "profilePic" style="width:20%; padding-left: 15%;">
+        <img src = "collectedCells.jpg" alt = "profilePic" style="width:20%; padding-left: 20%;">
     </div>
     <div class = "row">
         <h2 class= "researchTitle">Collection Channels in New DEP Device</h2>
         <p class = "researchContent">
           We designed and integrated the next iteration expansion collection channels to our previous orifice DEP design. The expansion section is designed to amplify separation distance between streamlines. Here we demonstrate collection of no DEP and DEP fractionated RBCs.
         </p>
-        <img src = "DEP.gif" alt = "profilePic" style="width:50%; padding-left: 15%;">
+        <img src = "DEP.gif" alt = "profilePic" style="width:40%; padding-left: 20%;">
     </div>
     <div class = "row">
         <h2 class= "researchTitle">COMSOL Simulation</h2>
         <p class = "researchContent">
           Since the lab locked down due to COVID, I have spent my time learning COMSOL. The goal I have in mind it to use COMSOL to better design electrodes to maximize for the nDEP and the pDEP case.
         </p>
+        <img src = "COMSOL.PNG" alt = "profilePic" style="width:60%; padding-left: 20%;">
     </div>
     <div class = "row">
         <h2 class= "researchTitle">First DEP in new device</h2>
         <p class = "researchContent">
           We designed and fabricated a dynamic DEP device. The video here shows the cells being deflected under nDEP. The expansion of the cells also displays the spatial extend of the electric field.
         </p>
-        <img src = "inertial.gif" alt = "profilePic" style="width:50%; padding-left: 15%;">
+        <img src = "inertial.gif" alt = "profilePic" style="width:60%; padding-left: 20%;">
     </div>
     <div class = "row">
         <h2 class= "researchTitle">RBC Pearl Chaining</h2>
         <p class = "researchContent">
           After spending months of troubleshooting the fabrication of these microfluidic devices, I am finally able to move on to the experimental stage. Here we show field penetration across the microchannel by demonstrating pearl chaining of RBCs.
         </p>
-        <img src = "PC.gif" alt = "profilePic" style="width:50%; padding-left: 15%;">
+        <img src = "PC.gif" alt = "profilePic" style="width:40%; padding-left: 20%;">
     </div>
     <div class = "row">
         <h2 class= "researchTitle">Embossing Microfluidic Devices in COC</h2>
@@ -352,7 +341,7 @@
 
   <div id="ABOUT ME" class="tabcontent" style="padding-left:200px;padding-right:200px">
 
-    <h2 style="text-align: center; color: #141E3C;">
+    <h2 style="text-align: center; color: #141E3C; font-size: 30px; padding-bottom:50px">
       The Journey So Far
     </h2>
 
@@ -367,12 +356,12 @@
           <h2 class = "containterTitle"> AFRL</h2>
           <hr class = "containterDivider">
           <div class = "row">
-            <div class = "column" style = "width: 40%">
-              <img src = "WS2.jpg" alt = "profilePic" style="width:100%; padding-top:10%; padding-bottom: 5%;padding-left: 5%;">
+            <div class = "column" style = "width: 45%">
+              <img class = "containerImg" src = "WS2.jpg" alt = "profilePic">
             </div>
-            <div class = "column" style = "width: 60%;">
-              <p class = "containterText" style = "padding-left: 10%; padding-top:5%">
-                It all started with a summer research intership in a Physics lab at the Wright Patterson Air Force Base.
+            <div class = "column" style = "width: 55%;">
+              <p class = "containterText">
+                It all started with a summer research internship in a Physics lab at the Wright Patterson Air Force Base.
               </p>
             </div>
           </div>
@@ -388,10 +377,10 @@
           <h2 class = "containterTitle"> COLLEGE!!</h2>
           <hr class = "containterDivider">
           <div class = "row">
-            <div class = "column" style = "width: 30%">
-              <img src = "pitt.png" alt = "profilePic" style="width:100%; padding-left:10%; padding-top:10%">
+            <div class = "column" style = "width: 45%">
+              <img class = "containerImg" src = "pitt.png" alt = "profilePic">
             </div>
-            <div class = "column" style = "width: 70%;">
+            <div class = "column" style = "width: 55%;">
               <p class = "containterText">
                 I moved to Pittsburgh, PA to start my B.S. in Physics at the University of Pittsburgh
               </p>
@@ -409,12 +398,13 @@
           <h2 class = "containterTitle"> London</h2>
           <hr class = "containterDivider">
           <div class = "row">
-            <div class = "column" style = "width: 30%">
-              <img src = "pitt.png" alt = "profilePic" style="width:100%; padding-left:10%; padding-top:10%">
+            <div class = "column" style = "width: 45%">
+              <img class = "containerImg" src = "london.jpg" alt = "profilePic">
             </div>
-            <div class = "column" style = "width: 70%;">
+            <div class = "column" style = "width: 55%;">
               <p class = "containterText">
-                I moved to Pittsburgh, PA to start my B.S. in Physics at the University of Pittsburgh
+                I decided to go to London for this summer for an internship and classes.
+                I worked at WSP as a Systems Engineerer.
               </p>
             </div>
           </div>
@@ -430,12 +420,12 @@
           <h2 class = "containterTitle"> Nanoscience</h2>
           <hr class = "containterDivider">
           <div class = "row">
-            <div class = "column" style = "width: 30%">
-              <img src = "pitt.png" alt = "profilePic" style="width:100%; padding-left:10%; padding-top:10%">
+            <div class = "column" style = "width: 45%">
+              <img class = "containerImg" src = "microFab2.jpg" alt = "profilePic">
             </div>
-            <div class = "column" style = "width: 70%;">
+            <div class = "column" style = "width: 55%;">
               <p class = "containterText">
-                I moved to Pittsburgh, PA to start my B.S. in Physics at the University of Pittsburgh
+                After taking a Nanoscience and Nanotechnology Class, I decided to do reseach in the Frolov Lab.
               </p>
             </div>
           </div>
@@ -451,12 +441,12 @@
           <h2 class = "containterTitle"> France</h2>
           <hr class = "containterDivider">
           <div class = "row">
-            <div class = "column" style = "width: 30%">
-              <img src = "pitt.png" alt = "profilePic" style="width:100%; padding-left:10%; padding-top:10%">
+            <div class = "column" style = "width: 45%">
+              <img class = "containerImg" src = "grenoble2.jpg" alt = "profilePic">
             </div>
-            <div class = "column" style = "width: 70%;">
+            <div class = "column" style = "width: 55%;">
               <p class = "containterText">
-                I moved to Pittsburgh, PA to start my B.S. in Physics at the University of Pittsburgh
+                I went to Grenoble, France to do take an internship
               </p>
             </div>
           </div>
@@ -472,12 +462,12 @@
           <h2 class = "containterTitle"> UVA</h2>
           <hr class = "containterDivider">
           <div class = "row">
-            <div class = "column" style = "width: 30%">
-              <img src = "pitt.png" alt = "profilePic" style="width:100%; padding-left:10%; padding-top:10%">
+            <div class = "column" style = "width: 45%">
+              <img class = "containerImg" src = "profilePic2.jpg" alt = "profilePic">
             </div>
-            <div class = "column" style = "width: 70%;">
+            <div class = "column" style = "width: 55%;">
               <p class = "containterText">
-                I moved to Pittsburgh, PA to start my B.S. in Physics at the University of Pittsburgh
+                I moved to Virginia to start graduate school
               </p>
             </div>
           </div>
@@ -493,12 +483,12 @@
           <h2 class = "containterTitle"> Present</h2>
           <hr class = "containterDivider">
           <div class = "row">
-            <div class = "column" style = "width: 30%">
-              <img src = "pitt.png" alt = "profilePic" style="width:100%; padding-left:10%; padding-top:10%">
+            <div class = "column" style = "width: 45%">
+              <img class = "containerImg" src = "chip.jpg" alt = "profilePic">
             </div>
-            <div class = "column" style = "width: 70%;">
+            <div class = "column" style = "width: 55%;">
               <p class = "containterText">
-                I moved to Pittsburgh, PA to start my B.S. in Physics at the University of Pittsburgh
+                Doing Research
               </p>
             </div>
           </div>
